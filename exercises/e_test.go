@@ -19,7 +19,7 @@ func TestIsEven(t *testing.T) {
 func TestReverseArray(t *testing.T) {
 	arr := []int{1, 2, 3}
 	newArr := ReverseArray(arr)
-	if newArr[0] != 3 || newArr[1] != 2 || newArr[2] != 1 {
+	if len(newArr) < 3 || newArr[0] != 3 || newArr[1] != 2 || newArr[2] != 1 {
 		fmt.Println("🔴 ReverseArray should reverse the array")
 		t.Fail()
 	}
